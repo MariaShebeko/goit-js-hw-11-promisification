@@ -6,7 +6,9 @@
   "homepage": "https://MariaShebeko.github.io/goit-js-hw-11-promisification",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-11-promisification/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-11-promisification/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,13 @@
   "bugs": {
     "url": "https://github.com/MariaShebeko/goit-js-hw-11-promisification/issues"
   },
+  "homepage": "https://mariashebeko.github.io/goit-js-hw-11-promisification",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
